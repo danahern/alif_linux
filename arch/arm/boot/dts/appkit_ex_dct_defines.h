@@ -47,7 +47,7 @@
 #define UART7_STATUS "disabled"
 
 //USB defines
-#define HSUSB_STATUS "disabled"
+#define HSUSB_STATUS "okay"
 
 //UTIMER defines
 #define UTIMER0_STATUS "disabled"

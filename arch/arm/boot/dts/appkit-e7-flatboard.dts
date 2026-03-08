@@ -22,10 +22,11 @@
 	#size-cells = <1>;
 
 	chosen {
-		bootargs = "console=ttyS0,115200n8 \
+		bootargs = "earlycon=uart8250,mmio32,0x4901a000,115200n8 console=ttyS0,115200n8 \
 		root=mtd:physmap-flash.0 \
 		rootfstype=cramfs \
 		ro \
+		phram=mram_overlay,0x80380000,0x200000 \
 		loglevel=9";
 	};
 

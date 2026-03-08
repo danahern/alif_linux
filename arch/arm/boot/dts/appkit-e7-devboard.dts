@@ -446,6 +446,8 @@
 			compatible = "snps","snps,dwc3";
 			reg = <0x48200000 0x100000>;
 			interrupts = <GIC_SPI 26 IRQ_TYPE_LEVEL_HIGH>;
+			clocks = <&usbclk>, <&usbclk>, <&usbclk>;
+			clock-names = "ref", "bus_early", "suspend";
 			phy = <&usbclk>;
 			phy-names = "usb2_phy";
 			dr_mode = "peripheral";
